@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSample.MainPage">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="dcism_logo.png" HorizontalOptions="Center" VerticalOptions="Center"
+                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="To Page 2" HorizontalOptions="Center" VerticalOptions="Start" 
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Clicked="Button_Clicked"/>
+            <Label Text="To Page 2" HorizontalOptions="Center" VerticalOptions="Center"
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Label>
+        </Grid>
+</ContentPage>
