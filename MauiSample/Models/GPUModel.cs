@@ -9,10 +9,10 @@ namespace MauiSample
         public GPUModel()
         {
         }
-        int _id { get; set; }
-        string _brand { get; set; }
-        string _model { get; set; }
-        string _image { get; set; }
+        private int _id { get; set; }
+        private string _brand { get; set; }
+        private string _model { get; set; }
+        private string _image { get; set; }
 
         public int id { 
             get { return _id; } 

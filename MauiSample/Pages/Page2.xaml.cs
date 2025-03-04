@@ -25,4 +25,19 @@ public partial class Page2 : ContentPage
     {
 		Navigation.PopModalAsync();
     }
+
+    private void GpuLV_OnItemSelected(object? sender, SelectedItemChangedEventArgs e)
+    {
+	    GPUModel item = (e.SelectedItem) as GPUModel;
+	    Console.WriteLine("Item selected: ",item);
+	    
+	    //((ListView)sender).SelectedItem = null; //remove the highlight
+    }
+
+    private void GpuLV_OnItemTapped(object? sender, ItemTappedEventArgs e)
+    {
+	    GPUModel item = (e.Item) as GPUModel;
+	    Console.WriteLine("Item tapped: ",item);
+	    gpuList.Remove(gpuList.Where(i => i.id == item.id).Single());
+    }
 }

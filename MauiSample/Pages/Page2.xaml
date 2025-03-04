@@ -20,7 +20,8 @@
         </Grid>
 
         <ListView x:Name="gpuLV" HorizontalOptions="Fill" VerticalOptions="Fill"
-            HasUnevenRows="true" SeparatorVisibility="Default">
+            HasUnevenRows="true" SeparatorVisibility="Default" ItemSelected="GpuLV_OnItemSelected"
+            ItemTapped="GpuLV_OnItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
