@@ -10,7 +10,7 @@ public partial class Page2 : ContentPage
 	public Page2()
 	{
 		InitializeComponent();
-		NavigationPage.SetHasNavigationBar(this, true);
+		NavigationPage.SetHasNavigationBar(this, false);
 		NavigationPage.SetHasBackButton(this, true);
 
 		gpuList.Add(new GPUModel(){ id=0, brand = "NVIDIA", model="RTX 5090", image = "zotac_rtx_5090.jpg" });

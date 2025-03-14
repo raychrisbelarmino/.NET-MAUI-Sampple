@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new Page2());
+		Navigation.PushAsync(new NavigationPage(new AppShell()));
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)

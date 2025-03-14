@@ -14,7 +14,7 @@
             </Grid.ColumnDefinitions>
             <Image Source="dcism_logo.png" HorizontalOptions="Center" VerticalOptions="Center"
                 Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-            <Button Text="To Page 2" HorizontalOptions="Center" VerticalOptions="Start" 
+            <Button Text="To Shell Page" HorizontalOptions="Center" VerticalOptions="Start" 
                 Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Clicked="Button_Clicked"/>
             <Label Text="To Page 2" HorizontalOptions="Center" VerticalOptions="Center"
                 Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">

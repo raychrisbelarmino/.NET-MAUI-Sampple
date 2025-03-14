@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MauiSample\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\MainPage.xaml",
+              "RelativeToolTip": "MauiSample\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T22:08:41.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MauiSample\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\AppShell.xaml",
+              "RelativeToolTip": "MauiSample\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T21:49:26.059Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
