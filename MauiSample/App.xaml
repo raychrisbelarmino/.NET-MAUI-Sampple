@@ -9,6 +9,18 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="buttonStyling" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="CornerRadius" Value="0"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
