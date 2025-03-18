@@ -16,7 +16,8 @@
                 Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
             <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Start">
                 <Button Text="To Shell Page"  Clicked="Button_Clicked" Style="{StaticResource buttonStyling}"/>
-            <Button Text="Set Preference"  Clicked="SetPreference_Clicked" Style="{StaticResource buttonStyling}"/>
+                <Button Text="Set Preference"  Clicked="SetPreference_Clicked" Style="{StaticResource buttonStyling}"/>
+                <Button Text="Get Preference"  Clicked="GetPreference_Clicked" Style="{StaticResource buttonStyling}"/>
                 <Button Text="Animate"  Clicked="Animate_Clicked"/>
             </StackLayout>
             <Label Text="To Page 2" HorizontalOptions="Center" VerticalOptions="Center"
