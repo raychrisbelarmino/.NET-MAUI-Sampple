@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\networkhelper\\restservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\networkhelper\\restservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\models\\postsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\models\\postsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\utilities\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\utilities\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\pages\\page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\pages\\page2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|c:\\users\\raych\\documents\\projects\\.net-maui-sampple\\mauisample\\models\\postsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A17FFE5A-015C-4131-BFD3-511F5773040E}|MauiSample\\MauiSample.csproj|solutionrelative:mauisample\\models\\postsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +34,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RestServices.cs",
-              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\NetworkHelper\\RestServices.cs",
-              "RelativeDocumentMoniker": "MauiSample\\NetworkHelper\\RestServices.cs",
-              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\NetworkHelper\\RestServices.cs",
-              "RelativeToolTip": "MauiSample\\NetworkHelper\\RestServices.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAawHEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T03:31:46.858Z",
+              "Title": "Page4.xaml",
+              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page4.xaml",
+              "RelativeDocumentMoniker": "MauiSample\\Pages\\Page4.xaml",
+              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page4.xaml",
+              "RelativeToolTip": "MauiSample\\Pages\\Page4.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T13:06:03.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Page4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page4.xaml.cs",
+              "RelativeDocumentMoniker": "MauiSample\\Pages\\Page4.xaml.cs",
+              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page4.xaml.cs",
+              "RelativeToolTip": "MauiSample\\Pages\\Page4.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv1cAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T13:06:16.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Utilities\\Constants.cs",
+              "RelativeDocumentMoniker": "MauiSample\\Utilities\\Constants.cs",
+              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Utilities\\Constants.cs",
+              "RelativeToolTip": "MauiSample\\Utilities\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:39:31.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PostsModel.cs",
               "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Models\\PostsModel.cs",
               "RelativeDocumentMoniker": "MauiSample\\Models\\PostsModel.cs",
@@ -64,52 +90,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Page2.xaml",
-              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page2.xaml",
-              "RelativeDocumentMoniker": "MauiSample\\Pages\\Page2.xaml",
-              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page2.xaml",
-              "RelativeToolTip": "MauiSample\\Pages\\Page2.xaml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-24T05:29:07.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Page2.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page2.xaml.cs",
-              "RelativeDocumentMoniker": "MauiSample\\Pages\\Page2.xaml.cs",
-              "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page2.xaml.cs",
-              "RelativeToolTip": "MauiSample\\Pages\\Page2.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T05:35:01.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Page3.xaml",
               "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page3.xaml",
               "RelativeDocumentMoniker": "MauiSample\\Pages\\Page3.xaml",
               "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page3.xaml",
               "RelativeToolTip": "MauiSample\\Pages\\Page3.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-24T05:28:45.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Page3.xaml.cs",
               "DocumentMoniker": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page3.xaml.cs",
               "RelativeDocumentMoniker": "MauiSample\\Pages\\Page3.xaml.cs",
               "ToolTip": "C:\\Users\\raych\\Documents\\Projects\\.NET-MAUI-Sampple\\MauiSample\\Pages\\Page3.xaml.cs",
               "RelativeToolTip": "MauiSample\\Pages\\Page3.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowC4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowGQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T02:53:28.2Z",
               "EditorCaption": ""

@@ -1,24 +1,25 @@
+using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.ObjectModel;
-using System;
-using System.Collections.Generic;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using Microsoft.Maui.Controls.PlatformConfiguration;
 
 namespace MauiSample;
 
-public partial class Page3 : ContentPage
+public partial class Page4 : ContentPage
 {
+	int selectedID;
+    ObservableCollection<PostsModel> posts = new ObservableCollection<PostsModel>();
+    PostsModel selectedItem = new PostsModel();
     NetworkHelper networkHelper;
     HttpClient client;
     CancellationToken cts;
     CancellationTokenSource cs = new CancellationTokenSource();
     HttpResponseMessage response;
-    ObservableCollection<PostsModel> posts = new ObservableCollection<PostsModel>();
-    public Page3()
+    public Page4(int id, ObservableCollection<PostsModel> postsParam)
 	{
 		InitializeComponent();
+		selectedID = id;
+        posts = postsParam;
         NavigationPage.SetHasNavigationBar(this, false);
         networkHelper = new NetworkHelper();
         client = new HttpClient();
@@ -26,7 +27,6 @@ public partial class Page3 : ContentPage
         client.DefaultRequestHeaders.Accept.Clear();
         client.MaxResponseContentBufferSize = 256000;
         client.Timeout = TimeSpan.FromMinutes(1);
-        postLV.ItemsSource = posts;
     }
 
     async protected override void OnAppearing()
@@ -38,28 +38,28 @@ public partial class Page3 : ContentPage
         {
             if (await networkHelper.IsHostReachable() == true)
             {
-                var uri = new Uri(Constants.URL + Constants.POSTS);
+                var uri = new Uri(Constants.URL + Constants.POSTS + "/" + selectedID);
                 response = await client.GetAsync(uri, cts);
-                
+
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    //Console.WriteLine("Response: " + result);
+                    Console.WriteLine("Response: " + result);
 
                     JObject jObject = new JObject();
                     try
                     {
                         jObject = JObject.Parse(result);
-                        //Console.WriteLine("JObject:  " + jObject);
+                        Console.WriteLine("JObject:  " + jObject);
                         ReceivedResult(jObject);
                     }
                     catch (Exception e)
                     {
                         JArray jA = JArray.Parse(result);
-                        
-                        jObject = JObject.Parse("{\"count\":"+jA.Count+",\"data\":" + JsonConvert.SerializeObject(jA) + "}");
 
-                        //Console.WriteLine("JObject if JArray:  " + jObject);
+                        jObject = JObject.Parse("{\"count\":" + jA.Count + ",\"data\":" + JsonConvert.SerializeObject(jA) + "}");
+
+                        Console.WriteLine("JObject if JArray:  " + jObject);
                         ReceivedResult(jObject);
                     }
                 }
@@ -81,26 +81,10 @@ public partial class Page3 : ContentPage
 
     public void ReceivedResult(JObject jsonData)
     {
-        posts.Clear();
-        for (int x = 0; x < Convert.ToInt32(jsonData["count"]); x++)
-        {
-            PostsModel i = JsonConvert.DeserializeObject<PostsModel>(jsonData["data"][x].ToString());
-            posts.Add(i);
-        }
-        activityIndicator.IsRunning = false;
-    }
-
-    private void PostLV_OnItemSelected(object? sender, SelectedItemChangedEventArgs e)
-    {
-        ((ListView)sender).SelectedItem = null; //remove the highlight
-    }
-
-    async private void PostLV_OnItemTapped(object? sender, ItemTappedEventArgs e)
-    {
-        PostsModel item = (e.Item) as PostsModel;
-        Console.WriteLine("Item tapped: ", item);
-        //posts.Remove(posts.Where(i => i.id == item.id).Single());
-
-        await Navigation.PushModalAsync(new Page4(item.id, posts));
+        selectedItem = JsonConvert.DeserializeObject<PostsModel>(jsonData.ToString());
+        uIDLbl.Text = "User ID:" + selectedItem.userId.ToString();
+        idLbl.Text = "ID:" + selectedItem.id.ToString();
+        titleLbl.Text = "Title:" + selectedItem.title;
+        bodyLbl.Text = "Body:" + selectedItem.body;
     }
 }

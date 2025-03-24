@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiSample.Page3"
              Title="Page3">
-    <VerticalStackLayout>
-        <ListView x:Name="postLV" HorizontalOptions="Fill" VerticalOptions="Fill"
+    <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="postLV" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill"
             HasUnevenRows="true" SeparatorVisibility="Default" ItemSelected="PostLV_OnItemSelected"
             ItemTapped="PostLV_OnItemTapped">
             <ListView.ItemTemplate>
@@ -18,5 +24,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </VerticalStackLayout>
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="true" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" />
+    </Grid>
 </ContentPage>

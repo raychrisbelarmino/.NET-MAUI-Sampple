@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSample.Page4"
+             Title="Page4">
+    <VerticalStackLayout>
+        <Label x:Name="uIDLbl" Text="User ID" VerticalOptions="Start" HorizontalOptions="Start" />
+        <Label x:Name="idLbl" Text="ID" VerticalOptions="Start" HorizontalOptions="Start" />
+        <Label x:Name="titleLbl" Text="Title" VerticalOptions="Start" HorizontalOptions="Start" />
+        <Label x:Name="bodyLbl" Text="Body" VerticalOptions="Start" HorizontalOptions="Start" />
+    </VerticalStackLayout>
+</ContentPage>
