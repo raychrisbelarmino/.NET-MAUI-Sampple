@@ -65,7 +65,8 @@ public partial class Page3 : ContentPage, IRestConnector
         {
             case 0://GET LIST
                 posts.Clear();
-                posts = JsonConvert.DeserializeObject<ObservableCollection<PostsModel>>(jsonData["data"].ToString());
+                var ob = JsonConvert.DeserializeObject<ObservableCollection<PostsModel>>(jsonData.ToString());
+                Console.WriteLine(ob);
                 await DisplayAlert("Success", "Data loaded successfully", "OK");
                 break;
         }

@@ -111,7 +111,7 @@ namespace MauiSample
                     JArray jA = JArray.Parse(result);
                     string output = "{\"data\":"+JsonConvert.SerializeObject(jA)+"}";
 
-                    //Console.WriteLine("serialized array: "+output);
+                    Console.WriteLine("serialized array: "+output);
                     WebServiceDelegate?.ReceiveJSONData(JObject.Parse(output), serviceType, ct);
                 }    
             }
