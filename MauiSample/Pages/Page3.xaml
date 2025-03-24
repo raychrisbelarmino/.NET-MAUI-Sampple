@@ -4,9 +4,19 @@
              x:Class="MauiSample.Page3"
              Title="Page3">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Page 3"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ListView x:Name="postLV" HorizontalOptions="Fill" VerticalOptions="Fill"
+            HasUnevenRows="true" SeparatorVisibility="Default" ItemSelected="PostLV_OnItemSelected"
+            ItemTapped="PostLV_OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding title}" FontSize="Title" />
+                            <Label Text="{Binding body}" FontSize="Subtitle" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>
