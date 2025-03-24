@@ -3,22 +3,26 @@ using Newtonsoft.Json.Linq;
 using System.Collections.ObjectModel;
 using System;
 using System.Collections.Generic;
+using Xamarin.KotlinX.Coroutines;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MauiSample;
 
-public partial class Page3 : ContentPage, IRestConnector
+public partial class Page3 : ContentPage
 {
+    NetworkHelper networkHelper = NetworkHelper.GetInstance;
+    HttpClient client;
     CancellationTokenSource cts;
-    RestServices webService = new RestServices();
     ObservableCollection<PostsModel> posts = new ObservableCollection<PostsModel>(); 
     public Page3()
 	{
 		InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false);
-
-        webService.WebServiceDelegate = this;
-
+        client = new HttpClient();
+        client.DefaultRequestHeaders.Accept.Clear();
+        client.MaxResponseContentBufferSize = 256000;
+        client.Timeout = TimeSpan.FromMinutes(1);
+        
         posts.Add(new PostsModel() { userId = 1, id = 0, title = "NVIDIA", body = "RTX 5090" });
         posts.Add(new PostsModel() { userId = 1, id = 1, title = "NVIDIA", body = "GTX 1080 Ti" });
         posts.Add(new PostsModel() { userId = 1, id = 2, title = "NVIDIA", body = "GTX 1050 Ti" });
@@ -29,22 +33,44 @@ public partial class Page3 : ContentPage, IRestConnector
     {
         base.OnAppearing();
 
-        cts = new CancellationTokenSource();
-        try
+        //GET 
+        if (networkHelper.HasInternet())
         {
-            string url = Constants.URL + Constants.POSTS;
+            if (await networkHelper.IsHostReachable() == true)
+            {
+                var uri = new Uri(Constants.URL + Constants.POSTS);
+                HttpResponseMessage response = await client.GetAsync(uri, cts.Token);
+                
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    //Console.WriteLine("Response: " + result);
 
-            await webService.GetRequest(url, 0, cts.Token);
+                    JObject jObject = new JObject();
+                    try{
+                        jObject = JObject.Parse(result);
+                        Console.WriteLine("JObject:  "+jObject);
+                    }catch (Exception e){
+                        JArray jA = JArray.Parse(result);
+                        jObject = JObject.Parse("{\"data\":" + JsonConvert.SerializeObject(jA) + "}");
+
+                        Console.WriteLine("JObject if JArray:  "+jObject);
+                    }    
+                }
+                else
+                {
+                    await DisplayAlert("Error!", response.StatusCode.ToString(), "ok");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Host Unreachable!", "The URL host for <Your App> cannot be reached and seems to be unavailable. Please try again later!", "ok");
+            }
         }
-        catch (OperationCanceledException oce)
+        else
         {
-            await DisplayAlert("Error!!", oce.Message, "OK");
+            await DisplayAlert("No Internet Connection!", "Please check your internet connection, and try again!", "ok");
         }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error!!!", ex.Message, "OK");
-        }
-        cts = null;
     }
 
     private void PostLV_OnItemSelected(object? sender, SelectedItemChangedEventArgs e)
@@ -57,24 +83,5 @@ public partial class Page3 : ContentPage, IRestConnector
         PostsModel item = (e.Item) as PostsModel;
         Console.WriteLine("Item tapped: ", item);
         posts.Remove(posts.Where(i => i.id == item.id).Single());
-    }
-
-    async public void ReceiveJSONData(JObject jsonData, int serviceType, CancellationToken ct)
-    {
-        switch (serviceType)
-        {
-            case 0://GET LIST
-                posts.Clear();
-                var ob = JsonConvert.DeserializeObject<ObservableCollection<PostsModel>>(jsonData.ToString());
-                Console.WriteLine(ob);
-                await DisplayAlert("Success", "Data loaded successfully", "OK");
-                break;
-        }
-       
-    }
-
-    async public void ReceiveTimeoutError(string title, string error, int serviceType)
-    {
-        await DisplayAlert(title, error, "OK");
     }
 }
