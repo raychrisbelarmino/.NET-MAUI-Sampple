@@ -8,13 +8,6 @@ public partial class MainPage : ContentPage
 		NavigationPage.SetHasNavigationBar(this, false);
 	}
 
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-        string firstName = Preferences.Default.Get("fname", "Default value if preference does not exist");
-        Console.WriteLine("Value of first name: " + firstName);
-    }
-
     private void Button_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new NavigationPage(new AppShell()));
@@ -30,6 +23,12 @@ public partial class MainPage : ContentPage
         // Set a string, number or boolean value:
         Preferences.Default.Set("fname", "Chiz");
     }
+    
+    private void GetPreference_Clicked(object? sender, EventArgs e)
+    {
+        string firstName = Preferences.Default.Get("fname", "Default value if preference does not exist");
+        Console.WriteLine("Value of first name: " + firstName);
+    }
 
     private void Animate_Clicked(object sender, EventArgs e)
     {
@@ -39,7 +38,5 @@ public partial class MainPage : ContentPage
         logoImage.TranslateTo(20, 20, 5000);
         logoImage.FadeTo(0.5, 5000);
     }
-
-    
 }
 
