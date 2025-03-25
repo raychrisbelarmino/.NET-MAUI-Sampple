@@ -3,10 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiSample.Page4"
              Title="Page4">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="lblStyling" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+            </Style>
+            <Style x:Key="entryStyling" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout>
-        <Label x:Name="uIDLbl" Text="User ID" VerticalOptions="Start" HorizontalOptions="Start" />
-        <Label x:Name="idLbl" Text="ID" VerticalOptions="Start" HorizontalOptions="Start" />
-        <Label x:Name="titleLbl" Text="Title" VerticalOptions="Start" HorizontalOptions="Start" />
-        <Label x:Name="bodyLbl" Text="Body" VerticalOptions="Start" HorizontalOptions="Start" />
+        <Label Text="User ID:" Style="{StaticResource lblStyling}"/>
+        <Entry x:Name="uIDLbl" IsEnabled="False" Placeholder="User ID" Style="{StaticResource entryStyling}"/>
+        <Label Text="ID:" Style="{StaticResource lblStyling}"/>
+        <Entry x:Name="idLbl" IsEnabled="False" Placeholder="ID" Style="{StaticResource entryStyling}"/>
+        <Label Text="Title:" Style="{StaticResource lblStyling}"/>
+        <Entry x:Name="titleLbl" Placeholder="Title" Style="{StaticResource entryStyling}"/>
+        <Label Text="Body:" Style="{StaticResource lblStyling}"/>
+        <Entry x:Name="bodyLbl" Placeholder="Body" Style="{StaticResource entryStyling}"/>
+        <Button Text="Update Post" HorizontalOptions="Center" Clicked="Update_OnClicked"/>
     </VerticalStackLayout>
 </ContentPage>

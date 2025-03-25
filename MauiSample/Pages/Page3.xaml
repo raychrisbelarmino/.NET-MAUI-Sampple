@@ -24,6 +24,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ActivityIndicator x:Name="activityIndicator" IsRunning="true" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" />
+        <ActivityIndicator x:Name="activityIndicator" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" />
     </Grid>
 </ContentPage>

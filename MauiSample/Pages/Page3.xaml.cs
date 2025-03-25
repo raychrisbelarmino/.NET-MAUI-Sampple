@@ -32,7 +32,7 @@ public partial class Page3 : ContentPage
     async protected override void OnAppearing()
     {
         base.OnAppearing();
-
+        activityIndicator.IsRunning = true;
         //GET 
         if (networkHelper.HasInternet())
         {
@@ -44,22 +44,17 @@ public partial class Page3 : ContentPage
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    //Console.WriteLine("Response: " + result);
 
                     JObject jObject = new JObject();
                     try
                     {
                         jObject = JObject.Parse(result);
-                        //Console.WriteLine("JObject:  " + jObject);
                         ReceivedResult(jObject);
                     }
                     catch (Exception e)
                     {
                         JArray jA = JArray.Parse(result);
-                        
                         jObject = JObject.Parse("{\"count\":"+jA.Count+",\"data\":" + JsonConvert.SerializeObject(jA) + "}");
-
-                        //Console.WriteLine("JObject if JArray:  " + jObject);
                         ReceivedResult(jObject);
                     }
                 }
@@ -79,7 +74,7 @@ public partial class Page3 : ContentPage
         }
     }
 
-    public void ReceivedResult(JObject jsonData)
+    private void ReceivedResult(JObject jsonData)
     {
         posts.Clear();
         for (int x = 0; x < Convert.ToInt32(jsonData["count"]); x++)
@@ -98,9 +93,6 @@ public partial class Page3 : ContentPage
     async private void PostLV_OnItemTapped(object? sender, ItemTappedEventArgs e)
     {
         PostsModel item = (e.Item) as PostsModel;
-        Console.WriteLine("Item tapped: ", item);
-        //posts.Remove(posts.Where(i => i.id == item.id).Single());
-
-        await Navigation.PushModalAsync(new Page4(item.id, posts));
+        await Navigation.PushAsync(new Page4(item, posts));
     }
 }
